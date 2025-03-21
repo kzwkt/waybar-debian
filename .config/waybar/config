@@ -1,0 +1,9 @@
+{
+
+"layer": "top",
+"position": "bottom",
+"height": 40,
+"modules-left": ["sway/workspaces","wlr/taskbar"],
+"modules-right": ["sway/mode","clock"],
+
+}
