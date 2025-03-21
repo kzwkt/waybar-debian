@@ -13,7 +13,7 @@ jobs:
             bash build.sh
             version=$(cat version)
             echo "VERSION=$version" >> $GITHUB_ENV
-            echo "FILES=$(realpath Waybar-$version/build/wawybar)" >> $GITHUB_ENV
+            echo "FILES=$(realpath Waybar-$version/build/waybar)" >> $GITHUB_ENV
 
       - name: Set dynamic tag version
         run: |
