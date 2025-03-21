@@ -13,7 +13,7 @@ jobs:
             bash build.sh
             version=$(cat version)
             echo "VERSION=$version" >> $GITHUB_ENV
-            echo "FILES=$(realpath labwc-$version/build/wawybar)" >> $GITHUB_ENV
+            echo "FILES=$(realpath Waybar-$version/build/wawybar)" >> $GITHUB_ENV
 
       - name: Set dynamic tag version
         run: |
@@ -21,9 +21,9 @@ jobs:
 
       - uses: softprops/action-gh-release@v2
         with:
-          tag_name: "labwc-${{ env.VERSION }}"
-          name: "labwc"
-          body: "This release includes the possible build for labwc for debian stable."
+          tag_name: "waybar-${{ env.VERSION }}"
+          name: "warbar"
+          body: "This release includes latest build for warbar for debian stable."
           files: |
             ${{ env.FILES }}
         env:
