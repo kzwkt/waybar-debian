@@ -2,7 +2,7 @@ apt update
 apt install -y ca-certificates  
 echo "deb-src https://deb.debian.org/debian stable main" |  tee -a /etc/apt/sources.list
 apt update
-apt install wget  libgtkmm-3.0-dev libxkbregistry-dev libinput-dev libwayland-dev libwireplumber-0.4-dev pkgconf systemd-dev cmake   gcc cmake  meson ca-certificates binutils  -y
+apt install wget  libgtkmm-3.0-dev libxkbregistry-dev libinput-dev libwayland-dev libwireplumber-0.4-dev pkgconf  cmake   gcc cmake  meson ca-certificates binutils  -y
 version=0.12.0
 repo="Alexays/Waybar"
 echo $version > version 
