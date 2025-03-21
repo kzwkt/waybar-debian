@@ -1,0 +1,35 @@
+name: Install
+
+on: workflow_dispatch 
+
+jobs:
+  debian:
+    runs-on: ubuntu-latest
+    container: debian:stable
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup
+        run: |
+            bash build.sh
+            version=$(cat version)
+            echo "VERSION=$version" >> $GITHUB_ENV
+            echo "FILES=$(realpath labwc-$version/build/labwc)" >> $GITHUB_ENV
+
+      - name: Set dynamic tag version
+        run: |
+          # Generate a dynamic tag using commit SHA or other unique identifier
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "labwc-${{ env.VERSION }}"
+          name: "labwc"
+          body: "This release includes the possible build for labwc for debian stable."
+          files: |
+            ${{ env.FILES }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+             
+            
+            
+            
+
