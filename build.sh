@@ -1,5 +1,5 @@
 apt update 
-xbps-install libevdev-devel libinput-devel wayland-devel gtkmm-devel spdlog eudev-libudev-devel gtk-layer-shell-devel jsoncpp-devel libglib-devel libsigc++-devel fmt-devel
+apt install wget  libgtkmm-3.0-dev libxkbregistry-dev libinput-dev libwayland-dev libwireplumber-0.4-dev  libjsoncpp-dev libgtk-layer-shell-dev  libfmt-dev libspdlog-dev pkgconf  cmake   gcc g++ cmake  meson ca-certificates binutils  -y --no-install-recommends
 version=0.12.0
 repo="Alexays/Waybar"
 echo $version > version 
