@@ -1,5 +1,5 @@
 apt update 
-apt install wget  libxkbregistry-dev libinput-dev libwayland-dev  libjsoncpp-dev libgtk-layer-shell-dev  libfmt-dev libspdlog-dev pkgconf  cmake   gcc g++ cmake  meson ca-certificates binutils  -y --no-install-recommends
+apt install wget  libxkbregistry-dev libinput-dev libwayland-dev  libjsoncpp-dev libgtk-layer-shell-dev  libfmt-dev libspdlog-dev pkgconf  cmake   gcc g++ cmake  meson ca-certificates binutils  -y
 version=0.12.0
 repo="Alexays/Waybar"
 echo $version > version 
