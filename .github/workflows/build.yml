@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   debian:
     runs-on: ubuntu-latest
-    container: voidlinux/voidlinux:latest
+    container: debian:stable
     steps:
       - uses: actions/checkout@v2
       - name: Setup
