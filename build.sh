@@ -1,5 +1,5 @@
 apt update 
-apt install wget  git libxkbregistry-dev libinput-dev libwayland-dev  libjsoncpp-dev libgtk-layer-shell-dev  libfmt-dev libspdlog-dev pkgconf  cmake   gcc g++ cmake  meson ca-certificates binutils wayland-protocols -y --no-install-recommends
+apt install wget  git libxkbregistry-dev libinput-dev libwayland-dev  libjsoncpp-dev libgtk-layer-shell-dev  libfmt-dev libspdlog-dev pkgconf  cmake   gcc g++ cmake  meson ca-certificates binutils wayland-protocols libgtkmm-3.0-dev  libhowardhinnant-date-dev libinput-dev libwireplumber-dev -y --no-install-recommends
 version=0.12.0
 repo="Alexays/Waybar"
 echo $version > version 
